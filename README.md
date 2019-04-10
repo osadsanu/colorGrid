@@ -3,8 +3,10 @@
 ![](https://i.imgur.com/38jNFMm.gif)
 
 
-Simple grid filled with one base color, fade its brightness. Using [p5js](https://p5js.org).
-view at: http://osadsanu.github.io/colorGrid/
+Simple grid filled with one base color, fade its brightness. 
+Using [p5js](https://p5js.org).
+View it  at: http://osadsanu.github.io/colorGrid/
+
 Check the code on `sketch.js` file.
 
 ## Modify parameters
