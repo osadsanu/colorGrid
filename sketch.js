@@ -16,7 +16,7 @@ function Box (x,y,size,H,S,B,vel){
     this.c_sat+=(this.increment * this.vel);
   }
   this.addBriVal = function (){
-    this.increment *= (this.c_bri>115-(abs(this.vel)) || this.c_bri<35+(abs(this.vel))) ? -1:1;
+    this.increment *= (this.c_bri>115-(abs(this.vel)) || this.c_bri<45+(abs(this.vel))) ? -1:1;
     this.c_bri+=(this.increment * this.vel);
   }
   this.drawBox = function(){
@@ -27,7 +27,7 @@ function Box (x,y,size,H,S,B,vel){
 var grid = [];
 function setup() {
   colorMode(HSB, 360,100,100);
-  createCanvas(720,480);
+  createCanvas(1000,400);
   //noStroke();
   stroke(3);
   size=70;
@@ -36,7 +36,7 @@ function setup() {
   console.log(max_X);
   for(var x=0; x<max_X;x++){
     for(var y=0;y<max_Y;y++){
-      grid.push(new Box(x*size,y*size,size,243,100,random(40,50),random(-1.5,1.5)));
+      grid.push(new Box(x*size,y*size,size,212,100,random(48,60),random(-1.5,1.5)));
     }
   }
 }
