@@ -38,7 +38,7 @@ function Box (x,y,size,H,S,B,vel){
 
 var grid = [];
 function setup() {
-  colorMode(HSB, 360,100,100);
+  colorMode(HSB, 150,100,100);
   createCanvas(1000,400);
   //noStroke();
   //The line between each box
